@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Exam AI - Smart Learning Platform',
@@ -13,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50">
+      <body style={{ backgroundColor: '#fff', color: '#000', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
         {children}
       </body>
     </html>
