@@ -1,6 +1,4 @@
-import type { NextRequest } from 'next/server'
-
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     // Call backend API
     const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/admin/stats`)
